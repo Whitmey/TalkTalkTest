@@ -6,6 +6,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/mainController.js"></script>
+    <link rel="stylesheet" href="style.scss">
   </head>
   <body ng-controller="MainController as main">
     <h1>Hi I'm Will</h1>
@@ -23,8 +24,13 @@
       </li>
     </ul>
 
-    <form ng-submit="main.add()">
-      <input id="formInput" type="text" placeholder="add user" ng-model="main.addUser.name">
+    <form ng-submit="main.add()">Add A User
+      <input class="formInput" type="text" placeholder="Name" ng-model="main.addUser.name">
+      <input class="formInput" type="text" placeholder="Email" ng-model="main.addUser.email">
+      <input class="formInput" type="text" placeholder="Job" ng-model="main.addUser.job">
+      <input class="formInput" type="text" placeholder="Location" ng-model="main.addUser.location">
+      <input class="formInput" type="text" placeholder="Tag" ng-model="main.addUser.tag">
+      <input class="formInput" type="text" placeholder="Avatar" ng-model="main.addUser.avatar">
     </form>
 
   </body>
