@@ -1,1 +1,1 @@
-console.log('JavaScript working!');
+angular.module('TalkTalkApp', []);
