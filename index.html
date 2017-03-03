@@ -15,6 +15,10 @@
         <h4><a href="#" ng-click="showDetails = !showDetails">{{ main.name }}</a></h4>
         <div ng-show="showDetails">
            <p>Email: {{ main.email }}</p>
+           <p>Job: {{ main.job }}</p>
+           <p>Location: {{ main.location }}</p>
+           <p>Tag: {{ main.tag }}</p>
+           <img src="{{ main.avatar }}" alt="Avatar">
         </div>
       </li>
     </ul>
