@@ -51,6 +51,7 @@ function MainController($http) {
 
   function addUser() {
     this.all.push({ name: this.addUser.name});
+    document.getElementById('formInput').value = '';
   }
 
 };
