@@ -6,23 +6,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/mainController.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.scss">
   </head>
   <body ng-controller="MainController as main">
     <h1>Hi I'm Will</h1>
 
-    <ul>
-      <li ng-repeat="main in main.all" id="user">
-        <h4><a href="#" ng-click="showDetails = !showDetails">{{ main.name }}</a></h4>
-        <div ng-show="showDetails">
-           <p>Email: {{ main.email }}</p>
-           <p>Job: {{ main.job }}</p>
-           <p>Location: {{ main.location }}</p>
-           <p>Tag: {{ main.tag }}</p>
-           <img src="{{ main.avatar }}" alt="Avatar">
+    <div id="users">
+      <div ng-repeat="main in main.all" class="user">
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="{{ main.avatar }}" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">{{ main.name }}</h4>
+              <div ng-show="showDetails">
+                 <p>Email: {{ main.email }}</p>
+                 <p>Job: {{ main.job }}</p>
+                 <p>Location: {{ main.location }}</p>
+                 <p>Tag: {{ main.tag }}</p>
+              </div>
+              <a class="btn btn-primary" href="#" ng-click="showDetails = !showDetails">Details</a>
+            </div>
         </div>
-      </li>
-    </ul>
+      </div>
+    </div>
 
     <form>Add A User
       <input class="formInput" type="text" placeholder="Name" ng-model="main.addUser.name">
