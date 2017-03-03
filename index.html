@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="style.scss">
   </head>
   <body ng-controller="MainController as main">
-    <h1>Hi I'm Will</h1>
 
     <div id="users">
       <div ng-repeat="main in main.all" class="user">
@@ -31,13 +30,31 @@
     </div>
 
     <form>Add A User
-      <input class="formInput" type="text" placeholder="Name" ng-model="main.addUser.name">
-      <input class="formInput" type="text" placeholder="Email" ng-model="main.addUser.email">
-      <input class="formInput" type="text" placeholder="Job" ng-model="main.addUser.job">
-      <input class="formInput" type="text" placeholder="Location" ng-model="main.addUser.location">
-      <input class="formInput" type="text" placeholder="Tag" ng-model="main.addUser.tag">
-      <input class="formInput" type="text" placeholder="Avatar" ng-model="main.addUser.avatar">
-      <button type="button" name="button" ng-click="main.add()">Add User</button>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Example label</label>
+        <input class="form-control" id="formGroupExampleInput" class="formInput" type="text" placeholder="Name" ng-model="main.addUser.name">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Example label</label>
+        <input class="form-control" id="formGroupExampleInput" class="formInput" type="text" placeholder="Email" ng-model="main.addUser.email">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Example label</label>
+        <input class="form-control" id="formGroupExampleInput" class="formInput" type="text" placeholder="Job" ng-model="main.addUser.job">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Example label</label>
+        <input class="form-control" id="formGroupExampleInput" class="formInput" type="text" placeholder="Location" ng-model="main.addUser.location">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Example label</label>
+        <input class="form-control" id="formGroupExampleInput" class="formInput" type="text" placeholder="Tag" ng-model="main.addUser.tag">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Example label</label>
+        <input class="form-control" id="formGroupExampleInput" class="formInput" type="text" placeholder="Avatar" ng-model="main.addUser.avatar">
+      </div>
+        <button class="btn btn-primary" type="button" name="button" ng-click="main.add()">Add User</button>
     </form>
 
   </body>
