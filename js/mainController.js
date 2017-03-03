@@ -50,8 +50,8 @@ function MainController($http) {
   this.add = addUser;
 
   function addUser() {
-    this.all.push({ name: this.addUser.name});
-    document.getElementByClass('formInput').value = '';
+    this.all.push({ name: this.addUser.name, email: this.addUser.email, job: this.addUser.job, location: this.addUser.location, tag: this.addUser.tag, avatar: this.addUser.avatar });
+    document.getElementsByClassName('formInput').value = '';
   }
 
 };

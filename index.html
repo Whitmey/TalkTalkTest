@@ -24,13 +24,14 @@
       </li>
     </ul>
 
-    <form ng-submit="main.add()">Add A User
+    <form>Add A User
       <input class="formInput" type="text" placeholder="Name" ng-model="main.addUser.name">
       <input class="formInput" type="text" placeholder="Email" ng-model="main.addUser.email">
       <input class="formInput" type="text" placeholder="Job" ng-model="main.addUser.job">
       <input class="formInput" type="text" placeholder="Location" ng-model="main.addUser.location">
       <input class="formInput" type="text" placeholder="Tag" ng-model="main.addUser.tag">
       <input class="formInput" type="text" placeholder="Avatar" ng-model="main.addUser.avatar">
+      <button type="button" name="button" ng-click="main.add()">Add User</button>
     </form>
 
   </body>
