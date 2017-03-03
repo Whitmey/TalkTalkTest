@@ -23,3 +23,4 @@ to the one that I was currently hosted on.
 * Delaying the data being put onto the view until the response from the API has been received.
 * Allow user to input avatar image and give it restrictions so that it does not interfere with the styling of the page
 For now the avatar is predetermined to avoid conflicts.
+* Stop avatars from shifting down when details button is clicked on.
