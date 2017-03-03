@@ -24,3 +24,4 @@ to the one that I was currently hosted on.
 * Allow user to input avatar image and give it restrictions so that it does not interfere with the styling of the page
 For now the avatar is predetermined to avoid conflicts.
 * Stop avatars from shifting down when details button is clicked on.
+* Loop through the array of users and use toUpperCase() to change each first letter to uppercase.
