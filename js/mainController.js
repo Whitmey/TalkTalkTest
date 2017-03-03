@@ -43,19 +43,8 @@ function MainController($http) {
         "tag": "acquaintance",
         "avatar": "http://www.cbc.ca/smartestperson/content/image/avatar-placeholder.png"
     }
-];
+  ];
 
   console.log(this.all);
-
-  // this.all = [];
-  //
-  // function getUsers() {               // Get request to API for list of users
-  //   $http.get('http://www.mocky.io/v2/58b92a980f00008609f09be1')
-  //   .then(function(response) {
-  //     this.all = response.data;
-  //     console.log(this.all);
-  //   });
-  // }
-  // getUsers();           // Object already displayed to page by the time the response had come back.
 
 };

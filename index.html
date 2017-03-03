@@ -10,6 +10,11 @@
   <body ng-controller="MainController as main">
     <h1>Hi I'm Will</h1>
 
-    {{ main.all }}
+    <ul>
+      <li ng-repeat="main in main.all" id="user">
+        {{ main.name }}
+      </li>
+    </ul>
+
   </body>
 </html>
