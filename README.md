@@ -1,8 +1,4 @@
 #TalkTalkTest
-___
-#####Will Whitmey<br>
----
-<br>
 
 ###How to use
 * This app can be run by simply cloning the files and opening the index.html file in a browser
