@@ -50,7 +50,7 @@ function MainController($http) {
   this.add = addUser;
 
   function addUser() {
-    this.all.push({ name: this.addUser.name, email: this.addUser.email, job: this.addUser.job, location: this.addUser.location, tag: this.addUser.tag, avatar: this.addUser.avatar });
+    this.all.push({ name: this.addUser.name, email: this.addUser.email, job: this.addUser.job, location: this.addUser.location, tag: this.addUser.tag, avatar: 'http://www.cbc.ca/smartestperson/content/image/avatar-placeholder.png' });
     document.getElementsByClassName('formInput').value = '';
   }
 
