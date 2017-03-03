@@ -12,7 +12,10 @@
 
     <ul>
       <li ng-repeat="main in main.all" id="user">
-        {{ main.name }}
+        <h4><a href="#" ng-click="showDetails = !showDetails">{{ main.name }}</a></h4>
+        <div ng-show="showDetails">
+           <p>Email: {{ main.email }}</p>
+        </div>
       </li>
     </ul>
 
