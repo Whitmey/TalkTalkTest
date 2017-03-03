@@ -47,4 +47,10 @@ function MainController($http) {
 
   console.log(this.all);
 
+  this.add = addUser;
+
+  function addUser() {
+    this.all.push({ name: this.addUser.name});
+  }
+
 };
